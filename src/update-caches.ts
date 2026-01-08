@@ -104,7 +104,7 @@ async function main() {
 
         // 5. Upload files to R2
         console.log(`Uploading ${latestCacheDirName} to R2...`);
-        await uploadDirectory(localCachePath, `caches/${latestCacheDirName}`);
+        await uploadDirectory(localCachePath, latestCacheDirName);
 
         // 6. Update Manifest List
         const newManifestEntry: R2CacheManifestItem = {
@@ -131,7 +131,7 @@ async function main() {
 
             for (const cacheToDelete of cachesToDelete) {
                 console.log(`Retention policy: Deleting old cache ${cacheToDelete.name}...`);
-                await deleteR2Directory(`caches/${cacheToDelete.name}`);
+                await deleteR2Directory(cacheToDelete.name);
             }
         }
 
