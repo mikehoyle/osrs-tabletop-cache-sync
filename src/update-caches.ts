@@ -1,4 +1,4 @@
-import "dotenv/config"; // Loads .env file immediately
+import "dotenv/config";
 import {
     S3Client,
     PutObjectCommand,
