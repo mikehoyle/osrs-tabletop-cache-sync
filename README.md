@@ -1,0 +1,1 @@
+Syncs up latest images to R2, simple little script

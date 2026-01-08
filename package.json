@@ -1,0 +1,23 @@
+{
+  "name": "osrs-tabletop-cache-sync",
+  "version": "1.0.0",
+  "description": "Sync OSRS Caches to R2 for access from osrstabletop",
+  "type": "module",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.965.0",
+    "adm-zip": "^0.5.16",
+    "dotenv": "^17.2.3"
+  }
+}
