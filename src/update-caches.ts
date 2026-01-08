@@ -220,7 +220,7 @@ async function downloadAndExtractCache(cache: OpenRS2Cache, destDir: string) {
     const buffer = Buffer.from(arrayBuffer);
 
     const zip = new AdmZip(buffer);
-    zip.extractAllTo(destDir, true);
+    zip.extractEntryTo("cache/", destDir, false, true);
 }
 
 async function saveXteas(cache: OpenRS2Cache, destDir: string) {
